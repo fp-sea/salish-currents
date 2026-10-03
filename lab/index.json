@@ -1,0 +1,13 @@
+{
+ "about": "Lab runs: whole SSCOFS runs kept for exploring (full volume, depth-averaged current, phase map, passes, patterns). Each <id>.json follows the same contract as sscofs/latest.json, its paths relative to lab/. pipeline/lab.py in salish-sea-flow-explorer.",
+ "sets": [
+  {
+   "id": "2026100121",
+   "label": "1\u20134 Oct 2026",
+   "note": "The first lab run: SSCOFS 21Z 1 Oct 2026, 72 h ahead.",
+   "meta": "2026100121.json",
+   "cycle": "2026-10-01T21:00:00Z",
+   "mb": 190.5
+  }
+ ]
+}

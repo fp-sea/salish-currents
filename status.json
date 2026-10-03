@@ -1,0 +1,98 @@
+{
+ "about": "Status of the shared SSCOFS data (pipeline/runner.py in salish-sea-flow-explorer). surface: the daily run published now; lab: the kept runs in lab/.",
+ "updated": "2026-10-03T13:40:35Z",
+ "staleHours": 40,
+ "dataUrl": "https://fp-sea.github.io/salish-currents/",
+ "runner": {
+  "host": "iMac",
+  "version": "3abf4d1"
+ },
+ "surface": {
+  "cycle": "2026-10-03T09:00:00Z",
+  "made": "2026-10-03T13:40:31Z",
+  "hours": 73,
+  "mb": 14.4
+ },
+ "lab": [
+  {
+   "id": "2026100121",
+   "label": "1\u20134 Oct 2026",
+   "cycle": "2026-10-01T21:00:00Z",
+   "mb": 190.5
+  }
+ ],
+ "lastAttempt": {
+  "at": "2026-10-03T13:40:00Z",
+  "result": "ok",
+  "message": "surface 14 MB; 34 s",
+  "cycle": "2026-10-03T09:00:00Z",
+  "step": "start"
+ },
+ "lastSuccess": "2026-10-03T13:40:00Z",
+ "failuresInARow": 0,
+ "history": [
+  {
+   "at": "2026-10-02T05:05:55Z",
+   "result": "ok",
+   "message": "surface 23 MB, volume 164 MB (2026-10-01T21Z); 1054 s",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T05:35:46Z",
+   "result": "ok",
+   "message": "surface 15 MB; 16 s",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T05:36:10Z",
+   "result": "no-new-run",
+   "message": "2026-10-01T21:00:00Z is already published",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T05:36:11Z",
+   "result": "no-new-run",
+   "message": "2026-10-01T21:00:00Z is already published",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T06:26:13Z",
+   "result": "ok",
+   "message": "2026-10-01T21:00:00Z built by an earlier dry run; now pushed",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T06:31:17Z",
+   "result": "ok",
+   "message": "surface 15 MB; 21 s",
+   "cycle": "2026-10-02T03:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T13:40:01Z",
+   "result": "ok",
+   "message": "surface 14 MB; 18 s",
+   "cycle": "2026-10-02T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T17:38:44Z",
+   "result": "no-new-run",
+   "message": "2026-10-02T09:00:00Z is already published",
+   "cycle": "2026-10-02T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-03T13:40:00Z",
+   "result": "ok",
+   "message": "surface 14 MB; 34 s",
+   "cycle": "2026-10-03T09:00:00Z",
+   "step": "start"
+  }
+ ]
+}
