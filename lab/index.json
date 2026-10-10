@@ -1,0 +1,33 @@
+{
+ "default": "2026081103",
+ "about": "Lab runs: whole SSCOFS runs kept for exploring (full volume, depth-averaged current, phase map, passes, patterns). Each <id>.json follows the same contract as sscofs/latest.json, its paths relative to lab/. pipeline/lab.py in salish-sea-flow-explorer.",
+ "sets": [
+  {
+   "id": "2026100121",
+   "label": "In between \u00b7 1\u20134 Oct 2026",
+   "note": "Between neaps and springs, towards springs \u2014 Seattle's range averages 12.1 ft over these 3 days (NOAA predictions for 9447130). The first lab run: SSCOFS 21Z 1 Oct 2026, 72 h.",
+   "meta": "2026100121.json",
+   "cycle": "2026-10-01T21:00:00Z",
+   "mb": 190.5,
+   "tide": "between"
+  },
+  {
+   "id": "2026091803",
+   "label": "Neap tides \u00b7 18\u201321 Sep 2026",
+   "note": "Neap tides: the smallest of the two months NOAA keeps \u2014 Seattle's range averages 8.8 ft over these 3 days (NOAA predictions for 9447130). SSCOFS 03Z 18 Sep 2026, 72 h.",
+   "meta": "2026091803.json",
+   "cycle": "2026-09-18T03:00:00Z",
+   "mb": 169.1,
+   "tide": "neap"
+  },
+  {
+   "id": "2026081103",
+   "label": "Spring tides \u00b7 11\u201314 Aug 2026",
+   "note": "Spring tides: the largest of the two months NOAA keeps \u2014 Seattle's range averages 14.0 ft over these 3 days (NOAA predictions for 9447130). SSCOFS 03Z 11 Aug 2026, 72 h.",
+   "meta": "2026081103.json",
+   "cycle": "2026-08-11T03:00:00Z",
+   "mb": 210.9,
+   "tide": "spring"
+  }
+ ]
+}

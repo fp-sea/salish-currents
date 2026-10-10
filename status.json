@@ -1,0 +1,166 @@
+{
+ "about": "Status of the shared SSCOFS data (pipeline/runner.py in salish-sea-flow-explorer). surface: the daily run published now; lab: the kept runs in lab/.",
+ "updated": "2026-10-10T13:41:35Z",
+ "staleHours": 40,
+ "dataUrl": "https://fp-sea.github.io/salish-currents/",
+ "runner": {
+  "host": "iMac",
+  "version": "8e1548b"
+ },
+ "surface": {
+  "cycle": "2026-10-10T09:00:00Z",
+  "made": "2026-10-10T13:41:32Z",
+  "hours": 73,
+  "mb": 15.5
+ },
+ "lab": [
+  {
+   "id": "2026100121",
+   "label": "In between \u00b7 1\u20134 Oct 2026",
+   "cycle": "2026-10-01T21:00:00Z",
+   "mb": 190.5
+  },
+  {
+   "id": "2026091803",
+   "label": "Neap tides \u00b7 18\u201321 Sep 2026",
+   "cycle": "2026-09-18T03:00:00Z",
+   "mb": 169.1
+  },
+  {
+   "id": "2026081103",
+   "label": "Spring tides \u00b7 11\u201314 Aug 2026",
+   "cycle": "2026-08-11T03:00:00Z",
+   "mb": 210.9
+  }
+ ],
+ "lastAttempt": {
+  "at": "2026-10-10T13:40:05Z",
+  "result": "ok",
+  "message": "surface 15 MB; 90 s",
+  "cycle": "2026-10-10T09:00:00Z",
+  "step": "start"
+ },
+ "lastSuccess": "2026-10-10T13:40:05Z",
+ "failuresInARow": 0,
+ "history": [
+  {
+   "at": "2026-10-02T05:05:55Z",
+   "result": "ok",
+   "message": "surface 23 MB, volume 164 MB (2026-10-01T21Z); 1054 s",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T05:35:46Z",
+   "result": "ok",
+   "message": "surface 15 MB; 16 s",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T05:36:10Z",
+   "result": "no-new-run",
+   "message": "2026-10-01T21:00:00Z is already published",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T05:36:11Z",
+   "result": "no-new-run",
+   "message": "2026-10-01T21:00:00Z is already published",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T06:26:13Z",
+   "result": "ok",
+   "message": "2026-10-01T21:00:00Z built by an earlier dry run; now pushed",
+   "cycle": "2026-10-01T21:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T06:31:17Z",
+   "result": "ok",
+   "message": "surface 15 MB; 21 s",
+   "cycle": "2026-10-02T03:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T13:40:01Z",
+   "result": "ok",
+   "message": "surface 14 MB; 18 s",
+   "cycle": "2026-10-02T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-02T17:38:44Z",
+   "result": "no-new-run",
+   "message": "2026-10-02T09:00:00Z is already published",
+   "cycle": "2026-10-02T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-03T13:40:00Z",
+   "result": "ok",
+   "message": "surface 14 MB; 34 s",
+   "cycle": "2026-10-03T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-04T13:40:01Z",
+   "result": "ok",
+   "message": "surface 14 MB; 85 s",
+   "cycle": "2026-10-04T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-05T13:40:06Z",
+   "result": "ok",
+   "message": "surface 15 MB; 71 s",
+   "cycle": "2026-10-05T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-05T18:00:21Z",
+   "result": "no-new-run",
+   "message": "2026-10-05T09:00:00Z is already published",
+   "cycle": "2026-10-05T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-06T13:40:07Z",
+   "result": "ok",
+   "message": "surface 15 MB; 89 s",
+   "cycle": "2026-10-06T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-07T13:40:05Z",
+   "result": "ok",
+   "message": "surface 15 MB; 84 s",
+   "cycle": "2026-10-07T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-08T13:40:01Z",
+   "result": "ok",
+   "message": "surface 16 MB; 626 s",
+   "cycle": "2026-10-08T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-09T13:40:07Z",
+   "result": "ok",
+   "message": "surface 16 MB; 627 s",
+   "cycle": "2026-10-09T09:00:00Z",
+   "step": "start"
+  },
+  {
+   "at": "2026-10-10T13:40:05Z",
+   "result": "ok",
+   "message": "surface 15 MB; 90 s",
+   "cycle": "2026-10-10T09:00:00Z",
+   "step": "start"
+  }
+ ]
+}
