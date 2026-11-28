@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salish currents data</title><style>
+:root{--bg:#f7f9fb;--fg:#1b2a36;--soft:#5b6b78;--ok:#1c8c74;--bad:#c8452f;--line:#d3dbde}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1820;--fg:#e4edf3;--soft:#93a4b1;--ok:#2a9e88;--bad:#e0613f;--line:#2b424a}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif;padding:16px;max-width:760px}
+h1{font-size:20px;margin:0 0 4px}.soft{color:var(--soft)}.ok{color:var(--ok)}.bad{color:var(--bad)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}td,th{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left}
+code{font-size:12px}</style></head><body>
+<h1>Salish Sea currents — data status</h1>
+<p class="soft">NOAA SSCOFS model runs packed for the Salish Sea Flow Explorer and the Wind Volume Explorer.
+Data: <code>sscofs/latest.json</code> · status: <code>status.json</code>.</p>
+<div id="s">Loading…</div>
+<script>
+const age=(t)=>t?((Date.now()-Date.parse(t))/36e5).toFixed(1)+" h ago":"—";
+fetch("status.json",{cache:"no-cache"}).then(r=>r.json()).then(s=>{
+ const a=s.lastAttempt||{},bad=s.failuresInARow>0,stale=s.surface&&(Date.now()-Date.parse(s.surface.cycle))/36e5>s.staleHours;
+ let h=`<p class="${bad||stale?"bad":"ok"}"><b>${bad?`Failing: ${s.failuresInARow} attempt(s) in a row`:stale?"Stale: the latest run is old":"OK"}</b></p>`;
+ h+=`<table><tr><th>Surface run</th><td>${s.surface?s.surface.cycle+" ("+age(s.surface.cycle)+"), "+(s.surface.mb||"?")+" MB":"none"}</td></tr>`;
+ h+=`<tr><th>Lab runs</th><td>${(s.lab||[]).map(x=>x.label+" ("+x.cycle.slice(0,13)+"Z, "+x.mb+" MB)").join("<br>")||"none"}</td></tr>`;
+ h+=`<tr><th>Last attempt</th><td>${a.at||"—"} (${age(a.at)}): <b>${a.result||"—"}</b> ${a.message||""}</td></tr>`;
+ h+=`<tr><th>Last success</th><td>${s.lastSuccess||"—"} (${age(s.lastSuccess)})</td></tr>`;
+ h+=`<tr><th>Runner</th><td>${(s.runner||{}).host||"?"} · source ${(s.runner||{}).version||"?"}</td></tr></table>`;
+ h+=`<h2 style="font-size:15px">Recent attempts</h2><table>`+(s.history||[]).slice().reverse().map(x=>`<tr><td>${x.at}</td><td class="${x.result==="failed"?"bad":""}">${x.result}</td><td>${x.cycle||""}</td><td>${x.message||""}</td></tr>`).join("")+"</table>";
+ document.getElementById("s").innerHTML=h;}).catch(e=>{document.getElementById("s").textContent="No status.json yet ("+e.message+")";});
+</script></body></html>
